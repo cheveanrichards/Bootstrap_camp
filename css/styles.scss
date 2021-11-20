@@ -3,10 +3,12 @@ $color-secondary: #5637dd;
 $color-pale: #CEC8FF;
 $color-mid: #901CAD;
 $color-dark: #60106b;
+$color-teal: #17A2B8;
 $color-black-transparent: rgba(0, 0, 0, 0.5);
 
 $body-font: "Open Sans", sans-serif;
 $header-font: "Lobster", cursive;
+
 
 
 body {
@@ -25,9 +27,10 @@ header {
     h2 {
     color: $color-pale;
 }
+}
 
 .site-footer {
-    background-image: linear-gradient($color-pale, white);
+    background-image: linear-gradient($color-pale, rgb(238, 218, 218));
     padding: 20px 0;
 }
 
@@ -69,4 +72,20 @@ header {
     z-index: 100;
 }
 
+#reserveModal{
+    .modal-header{
+        background-color: $color-teal;
+    }
+    h2{
+        color:white;
+    }
+}
 
+#loginModal{
+    .modal-header{
+        background-color: $color-mid;
+    }
+    h2{
+        color:white;
+    }
+}
